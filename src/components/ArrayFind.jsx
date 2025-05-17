@@ -1,7 +1,7 @@
 const ArrayFind = ({nameList,numberList}) =>{
 
     const max = numberList.find((num)=>(num>5));
-    const name = nameList.find((name)=>(name.toLowerCase().includes("r")))
+    const name = nameList.find((name)=>(name.includes("r")))
 
     return (
         <div>
