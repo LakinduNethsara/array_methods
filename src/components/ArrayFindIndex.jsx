@@ -6,7 +6,7 @@ const ArrayFindIndex = ({nameList})=>{
             <h1>First Name Include Letter 'r' (find)</h1>
             <table border={1} cellPadding={5}>
                     {nameList.map((name,index)=>(
-                            <tr>
+                            <tr bgcolor={index===nameIndex ? "red" : null}>
                                 <td key={index}>{index}</td>
                                 <td key={name}>{name}</td>
                             </tr>))
