@@ -3,7 +3,7 @@ const ArrayFindIndex = ({nameList})=>{
 
     return (
         <div>
-            <h1>First Name Include Letter 'r' (find)</h1>
+            <h1>First Name Include Letter 'r' (findIndex)</h1>
             <table border={1} cellPadding={5}>
                     {nameList.map((name,index)=>(
                             <tr bgcolor={index===nameIndex ? "red" : null}>
