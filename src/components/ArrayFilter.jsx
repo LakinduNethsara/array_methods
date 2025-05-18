@@ -10,7 +10,7 @@ const ArrayFilter =({nameList})=>{
                 {
                     filteredName.map((name,index)=>{
                         return (
-                            <li>{name}</li>
+                            <li key = {index}>{name}</li>
                         );
                     })
                 }

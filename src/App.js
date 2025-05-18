@@ -11,6 +11,7 @@ import ArrayEvery from './components/ArrayEvery';
 import ArraySort from './components/ArraySort';
 import ArraySlice from './components/ArraySlice';
 import ArraySplice from './components/ArraySplice';
+import ArrayFlat from './components/ArrayFlat';
 
 function App() {
 
@@ -46,6 +47,7 @@ function App() {
         <ArraySort nameList={names} />
         <ArraySlice nameList={names} />
         <ArraySplice nameList={names} />
+        <ArrayFlat nameList={names} />
       </header>
     </div>
   );
