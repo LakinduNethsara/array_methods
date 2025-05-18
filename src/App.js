@@ -6,22 +6,25 @@ import ArrayReduce from './components/ArrayReduce';
 import ArrayForEach from './components/ArrayForEach';
 import ArrayFind from './components/ArrayFind';
 import ArrayFindIndex from './components/ArrayFindIndex';
+import ArraySome from './components/ArraySome';
+import ArrayEvery from './components/ArrayEvery';
+import ArraySort from './components/ArraySort';
 
 function App() {
 
   const names = [
+    "Heidi",
     "Alice",
     "Bob",
     "Charlie",
     "David",
     "Eve",
-    "Frank",
-    "Grace",
-    "Heidi",
     "Ivan",
+    "Grace",
+    "Frank",
     "Judy",
-    "Karl",
     "Leo",
+    "Karl",
   ];
 
   const numbers = [1,2,3,4,5,6,7,8,9,10];
@@ -36,6 +39,9 @@ function App() {
         <ArrayForEach nameList={names} />
         <ArrayFind nameList={names} numberList={numbers} />
         <ArrayFindIndex nameList={names} />
+        <ArraySome nameList={names} />
+        <ArrayEvery nameList={names} />
+        <ArraySort nameList={names} />
       </header>
     </div>
   );
