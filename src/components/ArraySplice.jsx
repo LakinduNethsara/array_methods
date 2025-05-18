@@ -1,11 +1,12 @@
-const ArraySlice = ({nameList}) => {
+const ArraySplice = ({nameList}) => {
     // const arr1 = [nameList[3], nameList[4], nameList[5]];
-    const arr1 = nameList.slice(3,5);
+    const arr1 = [...nameList]
+    arr1.splice(3,0,"Heidi");
 
     return (
         <div>
             
-            <h1>Original Array Before Slice</h1>
+            <h1>Original Array Before Splice</h1>
             <table border={1} cellpadding={5}>
                 {
                     nameList.map((name,index)=>(
@@ -17,7 +18,7 @@ const ArraySlice = ({nameList}) => {
                 }
             </table>
 
-            <h1>Array Slice</h1>
+            <h1>Array Splice</h1>
             <table border={1} cellpadding={5}>
                 {
                     arr1.map((name,index)=>(
@@ -32,4 +33,4 @@ const ArraySlice = ({nameList}) => {
     );
 }
 
-export default ArraySlice;
+export default ArraySplice;
